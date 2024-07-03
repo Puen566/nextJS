@@ -1,0 +1,12 @@
+.Top{
+ display: flex;
+    background-color: rgb(198,223,253);
+ height: 70px;
+ color: rgb(130,172,233);
+ font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    text-align: left;
+
+}
+

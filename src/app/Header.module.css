@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.profilePic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 10px;
+  color: #729ddb;
+}
+
+.userInfo h1 {
+  margin: 0 10px;  /* ปรับระยะห่างระหว่าง h1 และไอคอน */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  color: #00bfff;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.actions button {
+  display: inline-block;
+  background-color: #6ebbc4;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 90px;
+  transition: background-color 0.3s;
+}
+
+.actions button:hover {
+  background-color: rgb(55, 118, 184);
+}
+
+.iconButton {
+  background-color: #f0f0f0; /* พื้นหลังสีเทา */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  margin-right: 10px; /* ขยับไปใกล้ปุ่ม Leave Request */
+}
+
+.iconButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.iconButton .icon {
+  font-size: 24px;
+  color: #00bfff;
+}
+
+.actions button:first-of-type {
+  margin-left: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม Leave Request และไอคอน */
+}

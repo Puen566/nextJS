@@ -1,0 +1,53 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
+  width: 170px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #729ddb;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+}
+
+.iconContainer {
+  background-color: #f4f3f3; /* สีเทา */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  padding: 10px; /* เพิ่ม padding เพื่อให้ไอคอนมีขนาดใหญ่ขึ้น */
+  display: inline-block;
+  margin-bottom: 10px; /* เพิ่ม margin ระหว่างไอคอนและ type */
+}
+
+.icon {
+  font-size: 24px; /* ปรับขนาดไอคอน */
+  color: #00bfff; 
+}
+
+.remaining {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card h2 {
+  font-size: 17px;
+  color: #729ddb;
+  font-weight: bold;
+}
+
+.card span {
+  margin: 0px;
+  font-size: 14px;
+  color: #82aeec;
+}
