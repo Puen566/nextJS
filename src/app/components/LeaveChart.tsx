@@ -1,3 +1,4 @@
+// components/LeaveChart.tsx
 "use client";
 
 import React from 'react';
@@ -33,7 +34,7 @@ const LeaveChart: React.FC<LeaveChartProps> = ({ data }) => {
   };
 
   const options = {
-    indexAxis: 'y' as const, // Add this line to make the chart horizontal
+    indexAxis: 'y' as const,
     scales: {
       x: {
         beginAtZero: true,
