@@ -13,7 +13,7 @@ import { faSuitcaseRolling, faHouseMedical, faUmbrellaBeach, faFlagUsa, faBabyCa
 const Home: React.FC = () => {
   const leaveData = {
     labels: ['Personal Leave', 'Sick Leave', 'Vacation Leave', 'Military Leave', 'Maternity Leave/Parental Leave', 'Ordination Leave(Buddhist)', 'Ordination Leave(Islam)'],
-    used: [11, 10, 6.5, 14, 69, 30, 90],
+    used: [30, 10, 6.5, 14, 69, 30, 90],
     remaining: [4, 20, 5.5, 286, 21, 60, 0],
   };
 
