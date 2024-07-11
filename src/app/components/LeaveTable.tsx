@@ -1,4 +1,3 @@
-// components/LeaveTable.tsx
 "use client";
 
 import React from 'react';
@@ -26,8 +25,12 @@ const LeaveTable: React.FC<LeaveTableProps> = ({ data }) => {
         <tr>
           <th>Leave Type</th>
           <th>Total</th>
-          <th className={styles.yellow}>Used</th>
-          <th className={styles.cyan}>Remain</th>
+          <th>
+            <span className={styles.squareYellow}></span>Used
+          </th>
+          <th>
+            <span className={styles.squareCyan}></span>Remain
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -35,8 +38,14 @@ const LeaveTable: React.FC<LeaveTableProps> = ({ data }) => {
           <tr key={index}>
             <td>{leave.type}</td>
             <td>{leave.total} days</td>
-            <td className={styles.yellow}>{leave.used} days</td>
-            <td className={styles.cyan}>{leave.remain} days</td>
+            <td>
+          
+              {leave.used} days
+            </td>
+            <td>
+             
+              {leave.remain} days
+            </td>
           </tr>
         ))}
       </tbody>

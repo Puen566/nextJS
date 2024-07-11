@@ -23,7 +23,7 @@
 }
 
 .userInfo h1 {
-  margin: 0 10px;  /* ปรับระยะห่างระหว่าง h1 และไอคอน */
+  margin: 0 10px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -59,7 +59,7 @@
 }
 
 .iconButton {
-  background-color: #f0f0f0; /* พื้นหลังสีเทา */
+  background-color: #f0f0f0;
   border: none;
   cursor: pointer;
   display: flex;
@@ -68,7 +68,7 @@
   padding: 5px;
   border-radius: 50%;
   transition: background-color 0.3s;
-  margin-right: 10px; /* ขยับไปใกล้ปุ่ม Leave Request */
+  margin-right: 10px;
 }
 
 .iconButton:hover {
@@ -81,5 +81,48 @@
 }
 
 .actions button:first-of-type {
-  margin-left: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม Leave Request และไอคอน */
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .profilePic {
+    height: 40px;
+    width: 40px;
+  }
+
+  .userInfo h1 {
+    font-size: 18px;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 5px;
+  }
+
+  .profilePic {
+    height: 30px;
+    width: 30px;
+  }
+
+  .userInfo h1 {
+    font-size: 16px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 }

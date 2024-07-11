@@ -33,6 +33,8 @@ const Home: React.FC = () => {
         <LeaveChart data={leaveData} />
         <LeaveTable data={leaveData} />
       </div>
+
+      
     </div>
   );
 };

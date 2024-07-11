@@ -22,16 +22,16 @@
 }
 
 .iconContainer {
-  background-color: #f4f3f3; /* สีเทา */
-  border-radius: 50%; /* ทำให้เป็นวงกลม */
-  padding: 10px; /* เพิ่ม padding เพื่อให้ไอคอนมีขนาดใหญ่ขึ้น */
+  background-color: #f4f3f3;
+  border-radius: 50%;
+  padding: 10px;
   display: inline-block;
-  margin-bottom: 10px; /* เพิ่ม margin ระหว่างไอคอนและ type */
+  margin-bottom: 10px;
 }
 
 .icon {
-  font-size: 24px; /* ปรับขนาดไอคอน */
-  color: #00bfff; 
+  font-size: 24px;
+  color: #00bfff;
 }
 
 .remaining {
@@ -50,4 +50,46 @@
   margin: 0px;
   font-size: 14px;
   color: #82aeec;
+}
+
+.redText {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 10px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .card h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 130px;
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 8px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .card h2 {
+    font-size: 13px;
+  }
 }

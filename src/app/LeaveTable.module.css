@@ -10,23 +10,36 @@
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  white-space: nowrap;
 }
 
 .table th {
   background-color: #f2f2f2;
   text-align: left;
+  position: relative;
 }
 
 .table td {
   text-align: left;
+  position: relative;
 }
 
-.yellow {
+.squareYellow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
   background-color: yellow;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
-.cyan {
+.squareCyan {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
   background-color: cyan;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .table th, .table td {
@@ -39,4 +52,49 @@
 
 .table tbody tr:hover {
   background-color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .squareYellow, .squareCyan {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .table, .table th, .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table th {
+    background-color: #f2f2f2;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .table th::after {
+    content: ":";
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .table td {
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    white-space: nowrap;
+  }
 }

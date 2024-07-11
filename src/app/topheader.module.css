@@ -1,12 +1,29 @@
-.Top{
- display: flex;
-    background-color: rgb(198,223,253);
- height: 70px;
- color: rgb(130,172,233);
- font-weight: bold;
-    font-size: 30px;
-    padding: 10px;
-    text-align: left;
-
-}
-
+.Top {
+   display: flex;
+   background-color: rgb(198,223,253);
+   height: 70px;
+   color: rgb(130,172,233);
+   font-weight: bold;
+   font-size: 30px;
+   padding: 10px;
+   text-align: left;
+   width: 100%;
+   align-items: center;
+ }
+ 
+ @media (max-width: 768px) {
+   .Top {
+     font-size: 24px;
+     height: 60px;
+     padding: 5px;
+   }
+ }
+ 
+ @media (max-width: 576px) {
+   .Top {
+     font-size: 18px;
+     height: 50px;
+     padding: 5px;
+   }
+ }
+ 
