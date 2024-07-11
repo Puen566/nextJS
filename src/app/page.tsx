@@ -1,4 +1,3 @@
-// pages/index.tsx
 "use client";
 
 import React from 'react';
@@ -8,19 +7,19 @@ import LeaveChart from './components/LeaveChart';
 import LeaveTable from './components/LeaveTable';
 import styles from './Home.module.css';
 import Top from './components/topheader';
-import { faSuitcaseRolling, faHouseMedical, faUmbrellaBeach, faFlagUsa, faBabyCarriage, faChurch, faVihara, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faSuitcaseRolling, faHouseMedical, faUmbrellaBeach, faFlagUsa, faBabyCarriage, faChurch, faVihara, faUser, faUserAltSlash, faUserLock, faHomeUser, faUsersBetweenLines, faUsersLine } from '@fortawesome/free-solid-svg-icons';
 
 const Home: React.FC = () => {
   const leaveData = {
     labels: ['Personal Leave', 'Sick Leave', 'Vacation Leave', 'Military Leave', 'Maternity Leave/Parental Leave', 'Ordination Leave(Buddhist)', 'Ordination Leave(Islam)'],
-    used: [30, 10, 6.5, 14, 69, 30, 90],
-    remaining: [4, 20, 5.5, 286, 21, 60, 0],
+    used: [11, 10, 6.5, 14, 69, 30, 90],
+    remaining: [4, 20, 5.5, 286, 21, 60,90],
   };
 
   return (
     <div>
       <Top />
-      <Header type='NISACHOL LAAIDDEE(KHUEAN)' icon={faUser} icon2={faHouseMedical} />
+      <Header type='NISACHOL LAAIDDEE(KHUEAN)' icon={faUser} icon2={faHouseMedical} /> {/* ส่ง icon2 */}
       <div className={styles.cards}>
         <LeaveSummaryCard type="Personal Leave" daysRemaining={4} icon={faSuitcaseRolling} />
         <LeaveSummaryCard type="Sick Leave" daysRemaining={20} icon={faHouseMedical} />
