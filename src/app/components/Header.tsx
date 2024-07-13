@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../Header.module.css';
+import styles from '../Css/Header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 

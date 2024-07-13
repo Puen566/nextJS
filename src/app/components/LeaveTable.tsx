@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import styles from '../LeaveTable.module.css';
+import styles from '../Css/LeaveTable.module.css';
 
 interface LeaveTableProps {
   data: {

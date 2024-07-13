@@ -1,6 +1,6 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from '../LeaveSummaryCard.module.css';
+import styles from '../Css/LeaveSummaryCard.module.css';
 
 interface LeaveSummaryCardProps {
   type: string;

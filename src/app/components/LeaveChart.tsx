@@ -4,7 +4,7 @@
 import React from 'react';
 import { Chart as ChartJS, LinearScale, CategoryScale, BarElement, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import styles from '../LeaveChart.module.css';
+import styles from '../Css/LeaveChart.module.css';
 
 ChartJS.register(LinearScale, CategoryScale, BarElement, Tooltip, Legend);
 

@@ -1,12 +1,13 @@
 "use client";
 
 import React from 'react';
-import Header from './components/Header';
-import LeaveSummaryCard from './components/LeaveSummaryCard';
-import LeaveChart from './components/LeaveChart';
-import LeaveTable from './components/LeaveTable';
-import styles from './Home.module.css';
-import Top from './components/topheader';
+import Header from './Components/Header';
+import LeaveSummaryCard from './Components/LeaveSummaryCard';
+import LeaveChart from './Components/LeaveChart';
+import LeaveTable from './Components/LeaveTable';
+import styles from './Css/Home.module.css';
+import Top from './Components/topheader';
+
 import { faSuitcaseRolling, faHouseMedical, faUmbrellaBeach, faFlagUsa, faBabyCarriage, faChurch, faVihara, faUser, faUserAltSlash, faUserLock, faHomeUser, faUsersBetweenLines, faUsersLine } from '@fortawesome/free-solid-svg-icons';
 
 const Home: React.FC = () => {
